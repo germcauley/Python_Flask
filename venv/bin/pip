@@ -1,5 +1,4 @@
-#!/Users/gmcauley/PycharmProjects/Flask_Tutorial/venv/venv/bin/python
-
+#!/Users/gmcauley/PycharmProjects/Flask_Tutorial/venv/venv/bin/python3.7
 # -*- coding: utf-8 -*-
 import re
 import sys
