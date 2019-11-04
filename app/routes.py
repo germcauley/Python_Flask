@@ -28,6 +28,7 @@ def index():
             'body': 'The Avengers movie was so cool!'
         }
     ]
+    posts = current_user.followed_posts().all()
     return render_template("index.html", title='Home Page', form=form,
                            posts=posts)
 
