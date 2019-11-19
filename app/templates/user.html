@@ -24,3 +24,7 @@
 {% include '_post.html' %}
 {% endfor %}
 {% endblock %}
+
+{% if user.last_seen %}
+<p>Last seen on: {{ moment(user.last_seen).format('LLL') }}</p>
+{% endif %}
