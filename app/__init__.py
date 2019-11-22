@@ -1,5 +1,5 @@
 from flask import Flask
-from flask_babel import Babel
+from flask_babel import Babel, lazy_gettext as _l
 from flask_mail import Mail
 from flask import request
 from config import Config
@@ -18,6 +18,7 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 login = LoginManager(app)
 login.login_view = 'login'
+login.login_message = _l('Please log in to access this page.')
 babel = Babel(app)
 mail = Mail(app)
 moment = Moment(app)
